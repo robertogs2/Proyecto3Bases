@@ -2,3 +2,8 @@ Se elimina Day y Hour de AccommodationXTour por Schedule (DATETIME)
 Se agrega a vehiculo LoanDate (DATETIME)
 
 Se añade precio base BasePrice a accomodation con 0 (INT), para hacer base*category
+
+Se añade tabla tipo de excursion
+Se añade fk a tabla tour con tipo de tour
+
+Se añade el fk de el area a cada tour

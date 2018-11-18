@@ -1,8 +1,8 @@
 USE master;
 GO
-DROP DATABASE BASESTEC;
-CREATE DATABASE BASESTEC;
-USE BASESTEC;
+DROP DATABASE GREENTEC;
+CREATE DATABASE GREENTEC;
+USE GREENTEC;
 GO
 IF OBJECT_ID('dbo.VehicleXEmployee', 'U') IS NOT NULL DROP TABLE dbo.VehicleXEmployee; -- Drop VehicleXEmployee table in case it already exists
 IF OBJECT_ID('dbo.Employee', 'U') IS NOT NULL DROP TABLE dbo.Employee; -- Drop Employee table in case it already exists
@@ -174,6 +174,12 @@ CREATE TABLE Visitor(
 	fk_idProfession INT FOREIGN KEY REFERENCES Profession(idProfession) NULL
 );
 
+
+CREATE TABLE TourType(
+	idTourType INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
+	"Description"  VARCHAR(50) NULL
+);
+
 -- Tour table creation
 CREATE TABLE Tour(
 	idTour INT IDENTITY(1,1) PRIMARY KEY NOT NULL, -- IDENTITY(1,1) for autoincrement of primary key
@@ -181,7 +187,9 @@ CREATE TABLE Tour(
 	"Description" VARCHAR(50) NULL, -- Double quotes because description is a key word
 	Price INT NULL,
 	Capacity INT NULL,
-	fk_idVehicle INT FOREIGN KEY REFERENCES Vehicle(idVehicle) 
+	fk_idVehicle INT FOREIGN KEY REFERENCES Vehicle(idVehicle),
+	fk_idTourType INT FOREIGN KEY REFERENCES TourType(idTourType),
+	fk_idArea INT FOREIGN KEY REFERENCES Area(idArea)
 ); 
 
 -- AccommodationXTour table creation
