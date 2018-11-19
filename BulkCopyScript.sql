@@ -1,10 +1,10 @@
-USE BASESTEC;
+USE GreenTEC;
 
 -- setup a variable to take the file data
 DECLARE @fileData  XML
 
 -- import the file contents into the variable
-SELECT @fileData=BulkColumn FROm OpenRowSet(Bulk'\\DEVSQLCLU\openfolder\DB.xml',Single_blob) x;
+SELECT @fileData=BulkColumn FROm OpenRowSet(Bulk'D:\Documentos\work\SharedFolder\bases\Project2\DB_Scripts\2-DataBase\DB.xml',Single_blob) x;
 
 
 -- insert the xml data into our Country table (Name)
@@ -157,11 +157,10 @@ FROM @fileData.nodes('/DB/Excursions/Excursion') AS x(xData)
 
 -- insert the xml data into our AccommodationXExcursion table (fk_idAccommodation, fk_idExcursion, "Day", "Hour")
 INSERT INTO AccommodationXTour
-	(fk_idAccommodation, fk_idTour, "Day", "Hour")
+ (fk_idAccommodation, fk_idTour, Schedule)
 SELECT
-	xData.value('AccommodationId[1]', 'int') fk_idAccommodation, -- 'xData' is our xml content alias
-	xData.value('ExcursionId[1]', 'int') fk_idExcursion,
-	xData.value('Date[1]', 'VARCHAR(15)') "Day",
-	xData.value('Hour[1]', 'VARCHAR(15)') "Hour"
+ xData.value('AccommodationId[1]', 'int') fk_idAccommodation, -- 'xData' is our xml content alias
+ xData.value('ExcursionId[1]', 'int') fk_idExcursion,
+ xData.value('Schedule[1]', 'VARCHAR(15)') Schedule
 FROM @fileData.nodes('/DB/AcommodationsXExcursions/AccomodationXExcursion') AS x(xData)
 
