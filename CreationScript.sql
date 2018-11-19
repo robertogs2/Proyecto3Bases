@@ -4,6 +4,8 @@ DROP DATABASE GREENTEC;
 CREATE DATABASE GREENTEC;
 USE GREENTEC;
 GO
+
+IF OBJECT_ID('dbo.Visitor', 'U') IS NOT NULL DROP TABLE dbo.Visitor; -- Drop Visitor table in case it already exists
 IF OBJECT_ID('dbo.VehicleXEmployee', 'U') IS NOT NULL DROP TABLE dbo.VehicleXEmployee; -- Drop VehicleXEmployee table in case it already exists
 IF OBJECT_ID('dbo.Employee', 'U') IS NOT NULL DROP TABLE dbo.Employee; -- Drop Employee table in case it already exists
 IF OBJECT_ID('dbo.Person', 'U') IS NOT NULL DROP TABLE dbo.Person; -- Drop Person table in case it already exists
@@ -20,10 +22,8 @@ IF OBJECT_ID('dbo.AssignedArea', 'U') IS NOT NULL DROP TABLE dbo.AssignedArea; -
 IF OBJECT_ID('dbo.Speciality', 'U') IS NOT NULL DROP TABLE dbo.Speciality; -- Drop Speciality table in case it already exists
 IF OBJECT_ID('dbo.ResearchProject', 'U') IS NOT NULL DROP TABLE dbo.ResearchProject; -- Drop ResearchProject table in case it already exists
 IF OBJECT_ID('dbo.ResearchProjectXEmployee', 'U') IS NOT NULL DROP TABLE dbo.ResearchProjectXEmployee; -- Drop ResearchProjectXEmployee table in case it already exists
-IF OBJECT_ID('dbo.Conservationist', 'U') IS NOT NULL DROP TABLE dbo.Conservationist; -- Drop Conservationist table in case it already exists
 IF OBJECT_ID('dbo.Profession', 'U') IS NOT NULL DROP TABLE dbo.Profession; -- Drop Profession table in case it already exists
 IF OBJECT_ID('dbo.Accommodation', 'U') IS NOT NULL DROP TABLE dbo.Accommodation; -- Drop Accommodation table in case it already exists
-IF OBJECT_ID('dbo.Visitor', 'U') IS NOT NULL DROP TABLE dbo.Visitor; -- Drop Visitor table in case it already exists
 IF OBJECT_ID('dbo.Tour', 'U') IS NOT NULL DROP TABLE dbo.Tour; -- Drop Tour table in case it already exists
 IF OBJECT_ID('dbo.AccommodationXTour', 'U') IS NOT NULL DROP TABLE dbo.AccommodationXTour; -- Drop AccommodationXTour table in case it already exists
 -- Country table creation.

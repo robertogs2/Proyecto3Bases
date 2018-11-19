@@ -113,7 +113,7 @@ SELECT
  xData.value('ProfessionId[1]', 'int') fk_idProfession,
  xData.value('AssignedAreaId[1][not(@xsi:nil = "true")]', 'int') fk_idAssignedArea,
  xData.value('SpecialityId[1][not(@xsi:nil = "true")]', 'int') fk_idSpeciality,
- xData.value('Salary[1][not(@xsi:nil = "true")]', 'int') Salary
+ xData.value('Salary[1]', 'int') Salary
 FROM @fileData.nodes('/DB/Employees/Employee') AS x(xData)
 
 -- insert the xml data into our Visitor table (fk_idPerson, Profession)
