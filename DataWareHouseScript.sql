@@ -5,42 +5,36 @@ CREATE DATABASE GREENTECDW;
 USE GREENTECDW;
 GO
 
-IF OBJECT_ID('dbo.Zone', 'U') IS NOT NULL DROP TABLE dbo."Zone";
-IF OBJECT_ID('dbo.Income', 'U') IS NOT NULL DROP TABLE dbo.Income;
-IF OBJECT_ID('dbo.Outcome', 'U') IS NOT NULL DROP TABLE dbo.Outcome;
+IF OBJECT_ID('dbo.Resource', 'U') IS NOT NULL DROP TABLE dbo."Resource";
+IF OBJECT_ID('dbo.Utility', 'U') IS NOT NULL DROP TABLE dbo."Utility";
 IF OBJECT_ID('dbo.TimeStamp', 'U') IS NOT NULL DROP TABLE dbo."TimeStamp";
 IF OBJECT_ID('dbo.Record', 'U') IS NOT NULL DROP TABLE dbo.Record;
 
-CREATE TABLE "Zone" (
-	pk_idZone INT IDENTITY(1,1) PRIMARY KEY, -- IDENTITY(1,1) for autoincrement of primary key
-	Park VARCHAR(50) Not Null,
-	Area VARCHAR(50) Not Null,
-	Accomodation VARCHAR(50) Not Null
-);
-
-CREATE TABLE Income (
-	pk_idIncome INT IDENTITY(1,1) PRIMARY KEY, -- IDENTITY(1,1) for autoincrement of primary key
-	AccommodationIncome FLOAT,
-	ToursIncome FLOAT
-);
-
-CREATE TABLE Outcome (
-	pk_idOutcome INT IDENTITY(1,1) PRIMARY KEY, -- IDENTITY(1,1) for autoincrement of primary key
-	AccomodationOutcome FLOAT,
-	TourCost FLOAT,
-	EmployeesCost FLOAT
-);
-
 CREATE TABLE "TimeStamp" (
 	pk_idTimeStamp INT IDENTITY(1,1) PRIMARY KEY, -- IDENTITY(1,1) for autoincrement of primary key
-	"Time" DATETIME
+	"Time" DATE
+);
+
+CREATE TABLE "Resource" (
+	pk_idResource INT IDENTITY(1,1) PRIMARY KEY, -- IDENTITY(1,1) for autoincrement of primary key
+	Park VARCHAR(50) NOT NULL, --name of the park
+	ZoneType INT NOT NULL, -- accommodation, tour, worker
+	Area VARCHAR(50) NOT NULL, -- area of the tour
+	Description VARCHAR(50) NOT NULL -- type of the tour
+);
+
+CREATE TABLE Utility (
+	pk_idUtility INT IDENTITY(1,1) PRIMARY KEY, -- IDENTITY(1,1) for autoincrement of primary key
+	income FLOAT,
+	outcome FLOAT
 );
 
 CREATE TABLE Record (
 	pk_idRecord INT IDENTITY(1,1) PRIMARY KEY, -- IDENTITY(1,1) for autoincrement of primary key
-	fk_idZone INT FOREIGN KEY REFERENCES "Zone"(pk_idZone) NOT NULL,
-	fk_idIncome INT FOREIGN KEY REFERENCES Income(pk_idIncome) NOT NULL,
-	fk_idOutcome INT FOREIGN KEY REFERENCES Outcome(pk_idOutcome) NOT NULL,
-	fk_idTimeStamp INT FOREIGN KEY REFERENCES "TimeStamp"(pk_idTimeStamp) NOT NULL,
-	
+	fk_idResource INT FOREIGN KEY REFERENCES "Resource"(pk_idResource) NOT NULL,
+	fk_idUtility INT FOREIGN KEY REFERENCES Utility(pk_idUtility) NOT NULL,
+	fk_idTimeStamp INT FOREIGN KEY REFERENCES "TimeStamp"(pk_idTimeStamp) NOT NULL
 );
+
+
+
