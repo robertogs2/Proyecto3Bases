@@ -1,10 +1,10 @@
 SELECT Park.Name AS ParkName, CONVERT(DATE, StartDate) AS "Time", Accommodation.BasePrice * DATEDIFF(DAY, StartDate, EndDate) AS PricePayed, 
 CASE Accommodation.Category
-     WHEN 'Gold' THEN 20000  
-	 WHEN 'Silver' THEN 5000  
-     ELSE 1000
+     WHEN 'Gold' THEN 5000*DATEDIFF(DAY, StartDate, EndDate)  
+	 WHEN 'Silver' THEN 2000*DATEDIFF(DAY, StartDate, EndDate) 
+     ELSE 1000*DATEDIFF(DAY, StartDate, EndDate)
 END AS Maintenance, 
-Employee.Salary*1/80 AS EmployeeSalary,
+Employee.Salary*1/80*DATEDIFF(DAY, StartDate, EndDate) AS EmployeeSalary,
 'Accommodation' AS ZoneType,
 'None' AS AreaName,
 'Capacity: ' + STR(Accommodation.Capacity+1) AS "Description"
