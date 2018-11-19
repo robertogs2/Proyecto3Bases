@@ -122,7 +122,8 @@ CREATE TABLE Employee(
 	fk_idPark INT FOREIGN KEY REFERENCES Park(idPark) NOT NULL,
 	fk_idProfession INT FOREIGN KEY REFERENCES Profession(idProfession) NOT NULL,
 	fk_idAssignedArea INT FOREIGN KEY REFERENCES AssignedArea(idAssignedArea) NULL,
-	fk_idSpeciality INT FOREIGN KEY REFERENCES Speciality(idSpeciality) NULL
+	fk_idSpeciality INT FOREIGN KEY REFERENCES Speciality(idSpeciality) NULL,
+	Salary INT
 );
 
 
