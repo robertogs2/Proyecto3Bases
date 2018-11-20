@@ -27,10 +27,6 @@
       <Name>Service.dim</Name>
       <FullPath>Service.dim</FullPath>
     </ProjectItem>
-    <ProjectItem>
-      <Name>Utility.dim</Name>
-      <FullPath>Utility.dim</FullPath>
-    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>

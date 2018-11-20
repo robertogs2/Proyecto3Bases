@@ -29,3 +29,5 @@ Armando el cubo
 	Ponerle el server donde hacer deploy
 	Click derecho en el cubo y process, luego run
 	Agregar la cuenta de windows en el .ds
+
+Consultas con el browser

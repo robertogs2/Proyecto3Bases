@@ -18,9 +18,6 @@
       <Dimension>
         <ID>Service</ID>
       </Dimension>
-      <Dimension>
-        <ID>Utility</ID>
-      </Dimension>
     </Dimensions>
     <Cubes>
       <Cube>

@@ -19,42 +19,35 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>gafqo3l0Vid5sT8Uz4iBE7V5JzI=20/11/2018 0:25:1619/11/2018 23:28:58</TimeStamp>
+        <TimeStamp>9V9tkdN0LkSuZsPTa2NSMkdQG54=19/11/2018 19:45:1019/11/2018 19:45:10</TimeStamp>
         <ID>
           <String>GREENTECDW</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>lsn8NXs9iBrFnGvqY6r1pIk+ebQ=19/11/2018 23:29:0719/11/2018 23:29:07</TimeStamp>
+        <TimeStamp>t6mje7hylkm3TzFlVkEWM7LnWPs=19/11/2018 19:48:3519/11/2018 19:48:35</TimeStamp>
         <ID>
           <String>GREENTECDW</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>PQk/I518VDAtQ/7FuOI6rMaJ+xg=19/11/2018 23:33:5219/11/2018 23:33:52</TimeStamp>
+        <TimeStamp>Lo9sJh3GV7uSIfZ6ISATptGbBs8=19/11/2018 19:48:4719/11/2018 19:48:47</TimeStamp>
         <ID>
           <String>Date</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>qHgAHL0kQw8U7Ta2epgsuMpsHvI=19/11/2018 23:34:1119/11/2018 23:34:11</TimeStamp>
+        <TimeStamp>nwtPUHXL30hcRlg43XrWqDAsQds=19/11/2018 19:48:5919/11/2018 19:48:59</TimeStamp>
         <ID>
           <String>Service</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>OBdM7oYWGi5M/RCsN4qMZRJoYOU=20/11/2018 0:05:5020/11/2018 0:05:50</TimeStamp>
-        <ID>
-          <String>Utility</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>j93K+pfV3RQgLE1CKW34A0kdY+o=20/11/2018 0:14:2520/11/2018 0:14:256armY1ukrSU1g6u8ipu02IDKS1A=20/11/2018 0:14:2520/11/2018 0:14:25</TimeStamp>
+        <TimeStamp>XDQN57eBopHcJk6RELxkaxN5ghA=19/11/2018 19:49:2619/11/2018 19:49:25S4fy3rqGBivmuUvJyW2xh6KadQw=19/11/2018 19:49:2619/11/2018 19:49:25</TimeStamp>
         <ID>
           <String>GREENTECDW</String>
         </ID>
@@ -71,5 +64,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2018-11-20T06:25:21.676667Z</LastDeployed>
+  <LastDeployed>2018-11-20T01:52:11.78Z</LastDeployed>
 </DeploymentSnapshot>
