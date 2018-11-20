@@ -28,7 +28,7 @@ CREATE TABLE "Service" (
 	"Description" VARCHAR(70) NOT NULL -- type of the tour
 );
 
-CREATE TABLE Utility (
+CREATE TABLE "Utility" (
 	pk_idUtility INT IDENTITY(1,1) PRIMARY KEY, -- IDENTITY(1,1) for autoincrement of primary key
 	PricePayed INT, --income
 	EmployeeSalary INT, -- outcome
@@ -41,6 +41,7 @@ CREATE TABLE "Entry" (
 	fk_idUtility INT FOREIGN KEY REFERENCES Utility(pk_idUtility) NOT NULL,
 	fk_idDate INT FOREIGN KEY REFERENCES "Date"(pk_idDate) NOT NULL
 );
+
 
 
 

@@ -3,7 +3,7 @@
     <Configuration>
       <Name>Development</Name>
       <Options>
-        <TargetServer>localhost</TargetServer>
+        <TargetServer>ROBERTO-LAPTOP</TargetServer>
         <TargetDatabase>GREENTEC_CUBE</TargetDatabase>
         <StartObject>
           <ObjectId></ObjectId>

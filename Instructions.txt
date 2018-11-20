@@ -24,3 +24,8 @@ Armando el cubo
 	Crear dimensiones
 		Tabla existente
 		Seleccionar todas las variables para cada tabla
+	Crear cubo
+		Sugerir y usar solo Entry con el pk
+	Ponerle el server donde hacer deploy
+	Click derecho en el cubo y process, luego run
+	Agregar la cuenta de windows en el .ds

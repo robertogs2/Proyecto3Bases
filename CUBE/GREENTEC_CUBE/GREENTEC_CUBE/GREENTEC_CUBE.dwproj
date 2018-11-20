@@ -6,6 +6,32 @@
     <Name>GREENTEC_CUBE.database</Name>
     <FullPath>GREENTEC_CUBE.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>GREENTECDW.cube</Name>
+      <FullPath>GREENTECDW.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>GREENTECDW.partitions</Name>
+          <FullPath>GREENTECDW.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Date.dim</Name>
+      <FullPath>Date.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Service.dim</Name>
+      <FullPath>Service.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Utility.dim</Name>
+      <FullPath>Utility.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
   <DataSources>
     <ProjectItem>
       <Name>GREENTECDW.ds</Name>
