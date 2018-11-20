@@ -31,3 +31,5 @@ Armando el cubo
 	Agregar la cuenta de windows en el .ds
 
 Consultas con el browser
+	Jalar por lo que se desea agrupar
+	

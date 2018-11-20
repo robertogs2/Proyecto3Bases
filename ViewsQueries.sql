@@ -50,8 +50,7 @@ WITH RS AS (
 			 WHEN 2 THEN 2000
 			 ELSE 1000
 		END AS Maintenance,
-		Employee.idEmployee AS EmployeeSalary 
-		--Employee.Salary*1/80 AS EmployeeSalary
+		Employee.Salary*1/80 AS EmployeeSalary
 		FROM AccommodationXTour
 		INNER JOIN Tour ON AccommodationXTour.fk_idTour = Tour.idTour
 		INNER JOIN TourType ON TourType.idTourType = fk_idTourType

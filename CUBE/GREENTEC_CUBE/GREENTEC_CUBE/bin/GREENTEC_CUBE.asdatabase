@@ -14,37 +14,11 @@
     <Dimension>
       <ID>Date</ID>
       <Name>Date</Name>
-      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
       <Annotations>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
-          <Value>
-            <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2523" scrolltop="-3800" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8086" y="10986" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
-                <font>
-                  <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
-                </font>
-                <mouseicon>
-                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
-                </mouseicon>
-              </diagram>
-              <layoutmanager>
-                <ddsxmlobj />
-              </layoutmanager>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Date" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="3387" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-                <control>
-                  <ddsxmlobjectstreaminitwrapper binary="000c0000b80b00003b0d0000" />
-                </control>
-                <layoutobject>
-                  <ddsxmlobj>
-                    <property name="LogicalObject" value="dbo_Date" vartype="8" />
-                  </ddsxmlobj>
-                </layoutobject>
-                <shape groupshapeid="0" groupnode="0" />
-              </ddscontrol>
-            </dds>
-          </Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
@@ -60,15 +34,15 @@
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-          <Value>-2523</Value>
+          <Value>0</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-          <Value>-3800</Value>
+          <Value>0</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-          <Value>20</Value>
+          <Value>0</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
@@ -79,7 +53,7 @@
           <Value>100</Value>
         </Annotation>
       </Annotations>
-      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
       <State>Unprocessed</State>
       <Source xsi:type="DataSourceViewBinding">
         <DataSourceViewID>GREENTECDW</DataSourceViewID>
@@ -238,37 +212,11 @@
     <Dimension>
       <ID>Service</ID>
       <Name>Service</Name>
-      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
       <Annotations>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
-          <Value>
-            <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2523" scrolltop="-4160" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8086" y="10986" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
-                <font>
-                  <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
-                </font>
-                <mouseicon>
-                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
-                </mouseicon>
-              </diagram>
-              <layoutmanager>
-                <ddsxmlobj />
-              </layoutmanager>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Service" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2667" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-                <control>
-                  <ddsxmlobjectstreaminitwrapper binary="000c0000b80b00006b0a0000" />
-                </control>
-                <layoutobject>
-                  <ddsxmlobj>
-                    <property name="LogicalObject" value="dbo_Service" vartype="8" />
-                  </ddsxmlobj>
-                </layoutobject>
-                <shape groupshapeid="0" groupnode="0" />
-              </ddscontrol>
-            </dds>
-          </Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
@@ -284,15 +232,15 @@
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-          <Value>-2523</Value>
+          <Value>0</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-          <Value>-4160</Value>
+          <Value>0</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-          <Value>20</Value>
+          <Value>0</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
@@ -303,7 +251,7 @@
           <Value>100</Value>
         </Annotation>
       </Annotations>
-      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
       <State>Unprocessed</State>
       <Source xsi:type="DataSourceViewBinding">
         <DataSourceViewID>GREENTECDW</DataSourceViewID>
@@ -426,14 +374,14 @@
     <Cube>
       <ID>GREENTECDW</ID>
       <Name>GREENTECDW</Name>
-      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
       <Annotations>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="6" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6286" scrolltop="-1086" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="21251" y="10986" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="12" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6286" scrolltop="-1086" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="22754" y="10986" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
                 </font>
@@ -444,7 +392,7 @@
               <layoutmanager>
                 <ddsxmlobj />
               </layoutmanager>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Entry" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3239" height="3027" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Entry" left="20" top="0" logicalid="6" controlid="1" masterid="0" hint1="0" hint2="0" width="3239" height="3027" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobjectstreaminitwrapper binary="000c0000a70c0000d30b0000" />
                 </control>
@@ -455,7 +403,7 @@
                 </layoutobject>
                 <shape groupshapeid="0" groupnode="0" />
               </ddscontrol>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Service" left="5659" top="180" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="2667" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Service" left="5659" top="180" logicalid="7" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="2667" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobjectstreaminitwrapper binary="000c0000b80b00006b0a0000" />
                 </control>
@@ -466,7 +414,7 @@
                 </layoutobject>
                 <shape groupshapeid="0" groupnode="0" />
               </ddscontrol>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Date" left="139" top="5427" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="3387" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Date" left="139" top="5427" logicalid="8" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="3387" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobjectstreaminitwrapper binary="000c0000b80b00003b0d0000" />
                 </control>
@@ -477,7 +425,7 @@
                 </layoutobject>
                 <shape groupshapeid="0" groupnode="0" />
               </ddscontrol>
-              <ddscontrol controlprogid="MSDDS.Polyline" left="2959" top="1114" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="MSDDS.Polyline" left="2959" top="1114" logicalid="9" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobj>
                     <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -485,7 +433,7 @@
                 </control>
                 <layoutobject>
                   <ddsxmlobj>
-                    <property name="LogicalObject" value="dataSet.Relations[FK__Entry__fk_idServ__3FD07829]" vartype="8" />
+                    <property name="LogicalObject" value="dataSet.Relations[FK__Entry__fk_idServ__61316BF4]" vartype="8" />
                     <property name="Virtual" value="0" vartype="11" />
                     <property name="VisibleAP" value="0" vartype="3" />
                   </ddsxmlobj>
@@ -495,7 +443,7 @@
                   <point x="3259" y="1513" />
                 </connector>
               </ddscontrol>
-              <ddscontrol controlprogid="MSDDS.Polyline" left="1240" top="2727" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="MSDDS.Polyline" left="1240" top="2727" logicalid="10" controlid="5" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobj>
                     <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -503,7 +451,7 @@
                 </control>
                 <layoutobject>
                   <ddsxmlobj>
-                    <property name="LogicalObject" value="dataSet.Relations[FK__Entry__fk_idDate__40C49C62]" vartype="8" />
+                    <property name="LogicalObject" value="dataSet.Relations[FK__Entry__fk_idDate__6225902D]" vartype="8" />
                     <property name="Virtual" value="0" vartype="11" />
                     <property name="VisibleAP" value="0" vartype="3" />
                   </ddsxmlobj>
@@ -549,7 +497,7 @@
           <Value>100</Value>
         </Annotation>
       </Annotations>
-      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
       <State>Unprocessed</State>
       <Dimensions>
         <Dimension>
@@ -607,16 +555,16 @@
         <MeasureGroup>
           <ID>Entry</ID>
           <Name>Entry</Name>
-          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
           <State>Unprocessed</State>
           <Measures>
             <Measure>
               <ID>Price Payed</ID>
               <Name>Price Payed</Name>
               <Source>
-                <DataType>Integer</DataType>
+                <DataType>Double</DataType>
                 <Source xsi:type="ColumnBinding">
                   <TableID>dbo_Entry</TableID>
                   <ColumnID>PricePayed</ColumnID>
@@ -627,7 +575,7 @@
               <ID>Employee Salary</ID>
               <Name>Employee Salary</Name>
               <Source>
-                <DataType>Integer</DataType>
+                <DataType>Double</DataType>
                 <Source xsi:type="ColumnBinding">
                   <TableID>dbo_Entry</TableID>
                   <ColumnID>EmployeeSalary</ColumnID>
@@ -638,10 +586,22 @@
               <ID>Maintenance</ID>
               <Name>Maintenance</Name>
               <Source>
-                <DataType>Integer</DataType>
+                <DataType>Double</DataType>
                 <Source xsi:type="ColumnBinding">
                   <TableID>dbo_Entry</TableID>
                   <ColumnID>Maintenance</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Entry Count</ID>
+              <Name>Entry Count</Name>
+              <AggregateFunction>Count</AggregateFunction>
+              <Source>
+                <DataType>Integer</DataType>
+                <DataSize>4</DataSize>
+                <Source xsi:type="RowBinding">
+                  <TableID>dbo_Entry</TableID>
                 </Source>
               </Source>
             </Measure>
@@ -690,9 +650,9 @@
             <Partition>
               <ID>Entry</ID>
               <Name>Entry</Name>
-              <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-              <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-              <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+              <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+              <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+              <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
               <State>Unprocessed</State>
               <Source xsi:type="DsvTableBinding">
                 <DataSourceViewID>GREENTECDW</DataSourceViewID>
@@ -708,6 +668,37 @@
       <Source>
         <DataSourceViewID>GREENTECDW</DataSourceViewID>
       </Source>
+      <MdxScripts>
+        <MdxScript>
+          <ID>MdxScript</ID>
+          <Name>MdxScript</Name>
+          <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+          <Commands>
+            <Command>
+              <Text>/*
+The CALCULATE command controls the aggregation of leaf cells in the cube.
+If the CALCULATE command is deleted or modified, the data within the cube is affected.
+You should edit this command only if you manually specify how the cube is aggregated.
+*/
+CALCULATE; 
+CREATE MEMBER CURRENTCUBE.[Measures].TotalUtility
+ AS [Measures].[TotalGain]-[Measures].[TotalCost], 
+VISIBLE = 1  ;   
+CREATE MEMBER CURRENTCUBE.[Measures].TotalCost
+ AS [Measures].[Employee Salary]+[Measures].[Maintenance], 
+FORMAT_STRING = "Standard", 
+VISIBLE = 1;  
+CREATE MEMBER CURRENTCUBE.[Measures].TotalGain
+ AS [Measures].[Price Payed], 
+VISIBLE = 1; 
+CREATE MEMBER CURRENTCUBE.[Measures].UtilityVSEmployee
+ AS [Measures].[Price Payed]/[Measures].[Employee Salary], 
+VISIBLE = 1  ; </Text>
+            </Command>
+          </Commands>
+        </MdxScript>
+      </MdxScripts>
     </Cube>
   </Cubes>
   <DataSources>
@@ -730,8 +721,8 @@
     <DataSourceView>
       <ID>GREENTECDW</ID>
       <Name>GREENTECDW</Name>
-      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
       <Annotations>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
@@ -743,7 +734,6 @@
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
-          <Value></Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
@@ -771,25 +761,25 @@
       <DataSourceID>GREENTECDW</DataSourceID>
       <Schema>
         <xs:schema id="GREENTECDW" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
-          <xs:element name="GREENTECDW" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="80aa894b-33c5-4ec5-85f4-2260f164a3ef">
+          <xs:element name="GREENTECDW" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="d0ab6c35-380e-4efe-9473-0b2846336bb2">
             <xs:complexType>
               <xs:choice minOccurs="0" maxOccurs="unbounded">
-                <xs:element name="dbo_Date" msprop:design-time-name="94502c9e-9c8c-4419-b6a9-b19c8a060a5e" msprop:FriendlyName="Date" msprop:DbSchemaName="dbo" msprop:DbTableName="Date" msprop:TableType="Table">
+                <xs:element name="dbo_Date" msprop:design-time-name="0e18bf1c-9063-48cd-90ff-14b2cd966d4c" msprop:FriendlyName="Date" msprop:DbSchemaName="dbo" msprop:DbTableName="Date" msprop:TableType="Table">
                   <xs:complexType>
                     <xs:sequence>
-                      <xs:element name="pk_idDate" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="5c2fe436-6023-4ead-81e4-7b6eef03b6b9" msprop:DbColumnName="pk_idDate" msprop:FriendlyName="pk_idDate" type="xs:int" />
-                      <xs:element name="Time" msprop:design-time-name="b69dd326-2c09-4f01-a843-9c35b002c8d5" msprop:DbColumnName="Time" msprop:FriendlyName="Time" type="xs:dateTime" minOccurs="0" />
-                      <xs:element name="Week" msprop:design-time-name="82c0cc76-1a43-4f0f-b134-547bdb12cb35" msprop:DbColumnName="Week" msprop:FriendlyName="Week" type="xs:int" minOccurs="0" />
-                      <xs:element name="Month" msprop:design-time-name="047b2901-d2b2-41c0-8073-c5d79f78141e" msprop:DbColumnName="Month" msprop:FriendlyName="Month" minOccurs="0">
+                      <xs:element name="pk_idDate" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="4e8b9727-2403-4883-b95d-bea7634bf0cf" msprop:DbColumnName="pk_idDate" msprop:FriendlyName="pk_idDate" type="xs:int" />
+                      <xs:element name="Time" msprop:design-time-name="b439e50d-c64a-411b-80db-8d872ecb4e17" msprop:DbColumnName="Time" msprop:FriendlyName="Time" type="xs:dateTime" minOccurs="0" />
+                      <xs:element name="Week" msprop:design-time-name="8b1134f4-fb1a-452b-a390-4b2619c0e8a1" msprop:DbColumnName="Week" msprop:FriendlyName="Week" type="xs:int" minOccurs="0" />
+                      <xs:element name="Month" msprop:design-time-name="252f2010-659d-438f-90a4-8df6beea1978" msprop:DbColumnName="Month" msprop:FriendlyName="Month" minOccurs="0">
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
                             <xs:maxLength value="15" />
                           </xs:restriction>
                         </xs:simpleType>
                       </xs:element>
-                      <xs:element name="Year" msprop:design-time-name="a6cd5ad6-7970-4ac0-8ab5-d8944a0c3f84" msprop:DbColumnName="Year" msprop:FriendlyName="Year" type="xs:int" minOccurs="0" />
-                      <xs:element name="Quarter" msprop:design-time-name="0c2d9856-7744-4df1-a684-7e91efeab8a1" msprop:DbColumnName="Quarter" msprop:FriendlyName="Quarter" type="xs:int" minOccurs="0" />
-                      <xs:element name="Weekday" msprop:design-time-name="43208daf-f64d-47a4-9d45-9806d2b17162" msprop:DbColumnName="Weekday" msprop:FriendlyName="Weekday" minOccurs="0">
+                      <xs:element name="Year" msprop:design-time-name="b786dc01-9999-433b-b2e7-173fae114355" msprop:DbColumnName="Year" msprop:FriendlyName="Year" type="xs:int" minOccurs="0" />
+                      <xs:element name="Quarter" msprop:design-time-name="30654090-9292-4963-98d0-e8f909ca6fa2" msprop:DbColumnName="Quarter" msprop:FriendlyName="Quarter" type="xs:int" minOccurs="0" />
+                      <xs:element name="Weekday" msprop:design-time-name="debee984-f91c-49af-823a-a2c2d90f6777" msprop:DbColumnName="Weekday" msprop:FriendlyName="Weekday" minOccurs="0">
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
                             <xs:maxLength value="15" />
@@ -799,44 +789,44 @@
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>
-                <xs:element name="dbo_Entry" msprop:design-time-name="1aa96d4d-1ba5-43d7-ad25-efaf91d13e0e" msprop:FriendlyName="Entry" msprop:DbSchemaName="dbo" msprop:DbTableName="Entry" msprop:TableType="Table">
+                <xs:element name="dbo_Entry" msprop:design-time-name="8e58ea8a-00f9-4fad-aade-2e4e237bba36" msprop:FriendlyName="Entry" msprop:DbSchemaName="dbo" msprop:DbTableName="Entry" msprop:TableType="Table">
                   <xs:complexType>
                     <xs:sequence>
-                      <xs:element name="pk_idEntry" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="3537f793-e597-4132-9139-82f5208cb3b1" msprop:DbColumnName="pk_idEntry" msprop:FriendlyName="pk_idEntry" type="xs:int" />
-                      <xs:element name="fk_idService" msprop:design-time-name="b3bab355-9920-4be6-ace9-bdf075e9789b" msprop:DbColumnName="fk_idService" msprop:FriendlyName="fk_idService" type="xs:int" />
-                      <xs:element name="fk_idDate" msprop:design-time-name="0da56b81-b233-4441-935e-c23b460e4e9a" msprop:DbColumnName="fk_idDate" msprop:FriendlyName="fk_idDate" type="xs:int" />
-                      <xs:element name="PricePayed" msprop:design-time-name="12158517-0d63-4ccd-aa0d-f8f42018a4bc" msprop:DbColumnName="PricePayed" msprop:FriendlyName="PricePayed" type="xs:int" minOccurs="0" />
-                      <xs:element name="EmployeeSalary" msprop:design-time-name="d6db2225-ffbc-4bd3-9de1-89cfedf0a0d0" msprop:DbColumnName="EmployeeSalary" msprop:FriendlyName="EmployeeSalary" type="xs:int" minOccurs="0" />
-                      <xs:element name="Maintenance" msprop:design-time-name="416e3577-228b-4c45-a274-494adc31531c" msprop:DbColumnName="Maintenance" msprop:FriendlyName="Maintenance" type="xs:int" minOccurs="0" />
+                      <xs:element name="pk_idEntry" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="1099d646-58cc-410d-9a76-6541e22f1bc4" msprop:DbColumnName="pk_idEntry" msprop:FriendlyName="pk_idEntry" type="xs:int" />
+                      <xs:element name="fk_idService" msprop:design-time-name="0cf4beb1-6159-4606-9ca3-3f871eae37d6" msprop:DbColumnName="fk_idService" msprop:FriendlyName="fk_idService" type="xs:int" />
+                      <xs:element name="fk_idDate" msprop:design-time-name="4d3f9ecc-c3a9-45c8-a710-75483e22035a" msprop:DbColumnName="fk_idDate" msprop:FriendlyName="fk_idDate" type="xs:int" />
+                      <xs:element name="PricePayed" msprop:design-time-name="996e067e-5495-4165-a4ad-e858f0e75b5f" msprop:DbColumnName="PricePayed" msprop:FriendlyName="PricePayed" type="xs:decimal" minOccurs="0" />
+                      <xs:element name="EmployeeSalary" msprop:design-time-name="95e7bd37-e18c-46c3-b307-d0cb78fafef7" msprop:DbColumnName="EmployeeSalary" msprop:FriendlyName="EmployeeSalary" type="xs:decimal" minOccurs="0" />
+                      <xs:element name="Maintenance" msprop:design-time-name="9b47abc7-56db-4778-9df3-4375537550a0" msprop:DbColumnName="Maintenance" msprop:FriendlyName="Maintenance" type="xs:decimal" minOccurs="0" />
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>
-                <xs:element name="dbo_Service" msprop:design-time-name="5cabc7b6-e48e-455a-a9d4-448520d4b408" msprop:FriendlyName="Service" msprop:DbSchemaName="dbo" msprop:DbTableName="Service" msprop:TableType="Table">
+                <xs:element name="dbo_Service" msprop:design-time-name="99055319-f818-401b-88c6-702e715d76b5" msprop:FriendlyName="Service" msprop:DbSchemaName="dbo" msprop:DbTableName="Service" msprop:TableType="Table">
                   <xs:complexType>
                     <xs:sequence>
-                      <xs:element name="pk_idService" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="fa1f29b8-dffe-4374-a5e2-8a357a7882e7" msprop:DbColumnName="pk_idService" msprop:FriendlyName="pk_idService" type="xs:int" />
-                      <xs:element name="Park" msprop:design-time-name="d80e4ceb-212e-4269-8c7a-92b02a654a44" msprop:DbColumnName="Park" msprop:FriendlyName="Park">
+                      <xs:element name="pk_idService" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="d6a4d4f4-8bdf-4746-b569-5d9022ba4c58" msprop:DbColumnName="pk_idService" msprop:FriendlyName="pk_idService" type="xs:int" />
+                      <xs:element name="Park" msprop:design-time-name="e8538dab-3838-4f03-99db-90a484d29ead" msprop:DbColumnName="Park" msprop:FriendlyName="Park">
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
                             <xs:maxLength value="70" />
                           </xs:restriction>
                         </xs:simpleType>
                       </xs:element>
-                      <xs:element name="ZoneType" msprop:design-time-name="ab6f8792-9dd3-47c7-954c-b92895a9c00f" msprop:DbColumnName="ZoneType" msprop:FriendlyName="ZoneType">
+                      <xs:element name="ZoneType" msprop:design-time-name="390f6680-3cc8-42f3-a764-46626d83a9eb" msprop:DbColumnName="ZoneType" msprop:FriendlyName="ZoneType">
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
                             <xs:maxLength value="70" />
                           </xs:restriction>
                         </xs:simpleType>
                       </xs:element>
-                      <xs:element name="Area" msprop:design-time-name="8ac207fe-265a-4327-96af-e0f9370db33a" msprop:DbColumnName="Area" msprop:FriendlyName="Area">
+                      <xs:element name="Area" msprop:design-time-name="1e806601-8bf0-4adb-bad6-3a71da3e7247" msprop:DbColumnName="Area" msprop:FriendlyName="Area">
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
                             <xs:maxLength value="70" />
                           </xs:restriction>
                         </xs:simpleType>
                       </xs:element>
-                      <xs:element name="Description" msprop:design-time-name="6ae7980b-afef-4095-b13c-d71a8fe1c0bd" msprop:DbColumnName="Description" msprop:FriendlyName="Description">
+                      <xs:element name="Description" msprop:design-time-name="e4363212-388f-4076-ac97-9fa81871a8d7" msprop:DbColumnName="Description" msprop:FriendlyName="Description">
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
                             <xs:maxLength value="70" />
@@ -860,13 +850,13 @@
               <xs:selector xpath=".//dbo_Service" />
               <xs:field xpath="pk_idService" />
             </xs:unique>
-            <xs:keyref name="FK__Entry__fk_idDate__40C49C62" refer="Constraint1">
-              <xs:selector xpath=".//dbo_Entry" />
-              <xs:field xpath="fk_idDate" />
-            </xs:keyref>
-            <xs:keyref name="FK__Entry__fk_idServ__3FD07829" refer="dbo_Service_Constraint1">
+            <xs:keyref name="FK__Entry__fk_idServ__61316BF4" refer="dbo_Service_Constraint1">
               <xs:selector xpath=".//dbo_Entry" />
               <xs:field xpath="fk_idService" />
+            </xs:keyref>
+            <xs:keyref name="FK__Entry__fk_idDate__6225902D" refer="Constraint1">
+              <xs:selector xpath=".//dbo_Entry" />
+              <xs:field xpath="fk_idDate" />
             </xs:keyref>
           </xs:element>
         </xs:schema>

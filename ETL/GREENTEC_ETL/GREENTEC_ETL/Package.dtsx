@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="35"
-  DTS:VersionGUID="{456DD82B-2BBC-426D-B906-655675A65D5D}">
+  DTS:VersionBuild="37"
+  DTS:VersionGUID="{E17C8FED-4749-4463-A968-A1EC960CBC55}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -52,7 +52,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{DBFECB2D-A5B5-4B19-9934-91EF025C7C97}"
-          SQLTask:SqlStatementSource="CREATE TABLE &quot;Date&quot; (&#xA;&#x9;pk_idDate INT IDENTITY(1,1) PRIMARY KEY, -- IDENTITY(1,1) for autoincrement of primary key&#xA;&#x9;&quot;Time&quot; DATE,&#xA;&#x9;&quot;Week&quot; INT,&#xA;&#x9;&quot;Month&quot; VARCHAR(15),&#xA;&#x9;&quot;Year&quot; INT,&#xA;&#x9;&quot;Quarter&quot; INT,&#xA;&#x9;&quot;Weekday&quot; VARCHAR(15)&#xA;);&#xA;&#xA;CREATE TABLE &quot;Service&quot; (&#xA;&#x9;pk_idService INT IDENTITY(1,1) PRIMARY KEY, -- IDENTITY(1,1) for autoincrement of primary key&#xA;&#x9;Park VARCHAR(70) NOT NULL, --name of the park&#xA;&#x9;ZoneType VARCHAR(70) NOT NULL, -- accommodation, tour, worker&#xA;&#x9;Area VARCHAR(70) NOT NULL, -- area of the tour&#xA;&#x9;&quot;Description&quot; VARCHAR(70) NOT NULL -- type of the tour&#xA;);&#xA;&#xA;&#xA;CREATE TABLE &quot;Entry&quot; (&#xA;&#x9;pk_idEntry INT IDENTITY(1,1) PRIMARY KEY, -- IDENTITY(1,1) for autoincrement of primary key&#xA;&#x9;fk_idService INT FOREIGN KEY REFERENCES &quot;Service&quot;(pk_idService) NOT NULL,&#xA;&#x9;fk_idDate INT FOREIGN KEY REFERENCES &quot;Date&quot;(pk_idDate) NOT NULL,&#xA;&#x9;PricePayed INT, --income&#xA;&#x9;EmployeeSalary INT, -- outcome&#xA;&#x9;Maintenance INT, -- outcome&#xA;);&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="CREATE TABLE &quot;Date&quot; (&#xA;&#x9;pk_idDate INT IDENTITY(1,1) PRIMARY KEY, -- IDENTITY(1,1) for autoincrement of primary key&#xA;&#x9;&quot;Time&quot; DATE,&#xA;&#x9;&quot;Week&quot; INT,&#xA;&#x9;&quot;Month&quot; VARCHAR(15),&#xA;&#x9;&quot;Year&quot; INT,&#xA;&#x9;&quot;Quarter&quot; INT,&#xA;&#x9;&quot;Weekday&quot; VARCHAR(15)&#xA;);&#xA;&#xA;CREATE TABLE &quot;Service&quot; (&#xA;&#x9;pk_idService INT IDENTITY(1,1) PRIMARY KEY, -- IDENTITY(1,1) for autoincrement of primary key&#xA;&#x9;Park VARCHAR(70) NOT NULL, --name of the park&#xA;&#x9;ZoneType VARCHAR(70) NOT NULL, -- accommodation, tour, worker&#xA;&#x9;Area VARCHAR(70) NOT NULL, -- area of the tour&#xA;&#x9;&quot;Description&quot; VARCHAR(70) NOT NULL -- type of the tour&#xA;);&#xA;&#xA;&#xA;CREATE TABLE &quot;Entry&quot; (&#xA;&#x9;pk_idEntry INT IDENTITY(1,1) PRIMARY KEY, -- IDENTITY(1,1) for autoincrement of primary key&#xA;&#x9;fk_idService INT FOREIGN KEY REFERENCES &quot;Service&quot;(pk_idService) NOT NULL,&#xA;&#x9;fk_idDate INT FOREIGN KEY REFERENCES &quot;Date&quot;(pk_idDate) NOT NULL,&#xA;&#x9;PricePayed DECIMAL(18,0), --income&#xA;&#x9;EmployeeSalary  DECIMAL(18,0), -- outcome&#xA;&#x9;Maintenance  DECIMAL(18,0), -- outcome&#xA;);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -763,16 +763,19 @@
                       name="fk_idDate" />
                     <externalMetadataColumn
                       refId="Package\Fill Entry\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PricePayed]"
-                      dataType="i4"
-                      name="PricePayed" />
+                      dataType="numeric"
+                      name="PricePayed"
+                      precision="18" />
                     <externalMetadataColumn
                       refId="Package\Fill Entry\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EmployeeSalary]"
-                      dataType="i4"
-                      name="EmployeeSalary" />
+                      dataType="numeric"
+                      name="EmployeeSalary"
+                      precision="18" />
                     <externalMetadataColumn
                       refId="Package\Fill Entry\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Maintenance]"
-                      dataType="i4"
-                      name="Maintenance" />
+                      dataType="numeric"
+                      name="Maintenance"
+                      precision="18" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -1687,7 +1690,7 @@
     design-time-name="Package\Fill Date">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="149.6,41.6"
           Id="Package\Fill Date\OLE DB Source"
@@ -1731,9 +1734,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -1755,9 +1756,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -1869,7 +1868,7 @@
     design-time-name="Package\Fill Services">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="155.2,41.6"
           Id="Package\Fill Services\Data Conversion"
@@ -1913,9 +1912,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -1949,9 +1946,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

@@ -31,9 +31,9 @@ CREATE TABLE "Entry" (
 	pk_idEntry INT IDENTITY(1,1) PRIMARY KEY, -- IDENTITY(1,1) for autoincrement of primary key
 	fk_idService INT FOREIGN KEY REFERENCES "Service"(pk_idService) NOT NULL,
 	fk_idDate INT FOREIGN KEY REFERENCES "Date"(pk_idDate) NOT NULL,
-	PricePayed INT, --income
-	EmployeeSalary INT, -- outcome
-	Maintenance INT, -- outcome
+	PricePayed DECIMAL(18,0), --income
+	EmployeeSalary  DECIMAL(18,0), -- outcome
+	Maintenance  DECIMAL(18,0), -- outcome
 );
 
 
