@@ -3,7 +3,6 @@ GO
 
 DROP VIEW DateView
 CREATE VIEW DateView AS
-
 WITH RS AS (
 	(--Tour
 		SELECT CONVERT(DATE, Schedule) AS "Time"
@@ -21,7 +20,6 @@ SELECT "Time", ROW_NUMBER() OVER (ORDER BY (SELECT 1)) AS pk_idDate FROM RS
 
 DROP VIEW UtilityView
 CREATE VIEW UtilityView AS
-
 WITH RS AS (
 	(--Accommodation
 		SELECT Accommodation.BasePrice * DATEDIFF(DAY, StartDate, EndDate) AS PricePayed, 
@@ -33,7 +31,7 @@ WITH RS AS (
 		Employee.Salary*1/80*DATEDIFF(DAY, StartDate, EndDate) AS EmployeeSalary
 		FROM Visit
 		INNER JOIN Accommodation ON Accommodation.idAccommodation = fk_idAccommodation
-		INNER JOIN Employee ON Employee.idEmployee = (select CAST(700 *  sqrt(exp(cos(idVisit))) AS INT) % 700)
+		INNER JOIN Employee ON Employee.idEmployee = (select CAST(RAND(idAccommodation*BasePrice)*10000 AS INT) %700)
 	)
 	UNION ALL
 	(--Tour
@@ -42,12 +40,13 @@ WITH RS AS (
 			 WHEN 1 THEN 5000
 			 WHEN 2 THEN 2000
 			 ELSE 1000
-		END AS Maintenance, 
-		Employee.Salary*1/80 AS EmployeeSalary
+		END AS Maintenance,
+		Employee.idEmployee AS EmployeeSalary 
+		--Employee.Salary*1/80 AS EmployeeSalary
 		FROM AccommodationXTour
-		INNER JOIN Tour ON AccommodationXTour.fk_idTour = idTour
+		INNER JOIN Tour ON AccommodationXTour.fk_idTour = Tour.idTour
 		INNER JOIN TourType ON TourType.idTourType = fk_idTourType
-		INNER JOIN Employee ON Employee.idEmployee = (select CAST(700 *  sqrt(exp(cos(idTour))) AS INT) % 700)
+		INNER JOIN Employee ON Employee.idEmployee = (select CAST(RAND(idTour*Price)*10000 AS INT) %700)+1
 	)
 )
 SELECT PricePayed, Maintenance, EmployeeSalary, ROW_NUMBER() OVER (ORDER BY (SELECT 1)) AS pk_idUtility FROM RS
@@ -77,3 +76,11 @@ WITH RS AS (
 	)
 )
 SELECT ParkName, ZoneType, AreaName, "Description", ROW_NUMBER() OVER (ORDER BY (SELECT 1)) AS pk_idService FROM RS
+SElect * from AccommodationXTour
+DROP VIEW EntryView
+CREATE VIEW EntryView AS
+SELECT ROW_NUMBER() OVER (ORDER BY (SELECT 1)) AS pk_idEntry,
+ROW_NUMBER() OVER (ORDER BY (SELECT 1)) AS fk_idUtility,
+ROW_NUMBER() OVER (ORDER BY (SELECT 1)) AS fk_idDate,
+ROW_NUMBER() OVER (ORDER BY (SELECT 1)) AS fk_idService
+FROM DateView

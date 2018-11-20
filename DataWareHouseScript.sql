@@ -17,15 +17,15 @@ CREATE TABLE "Date" (
 
 CREATE TABLE "Service" (
 	pk_idService INT IDENTITY(1,1) PRIMARY KEY, -- IDENTITY(1,1) for autoincrement of primary key
-	Park VARCHAR(50) NOT NULL, --name of the park
-	ZoneType INT NOT NULL, -- accommodation, tour, worker
-	Area VARCHAR(50) NOT NULL, -- area of the tour
+	Park VARCHAR(70) NOT NULL, --name of the park
+	ZoneType VARCHAR NOT NULL, -- accommodation, tour, worker
+	Area VARCHAR(70) NOT NULL, -- area of the tour
 	"Description" VARCHAR(50) NOT NULL -- type of the tour
 );
 
 CREATE TABLE Utility (
 	pk_idUtility INT IDENTITY(1,1) PRIMARY KEY, -- IDENTITY(1,1) for autoincrement of primary key
-	PricePayed FLOAT, --income
+	PricePayed INT, --income
 	EmployeeSalary INT, -- outcome
 	Maintenance INT -- outcome
 );
