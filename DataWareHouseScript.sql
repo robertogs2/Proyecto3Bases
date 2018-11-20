@@ -12,15 +12,20 @@ IF OBJECT_ID('dbo.Date', 'U') IS NOT NULL DROP TABLE dbo."Date";
 
 CREATE TABLE "Date" (
 	pk_idDate INT IDENTITY(1,1) PRIMARY KEY, -- IDENTITY(1,1) for autoincrement of primary key
-	"Time" DATE
+	"Time" DATE,
+	"Week" INT,
+	"Month" VARCHAR(15),
+	"Year" INT,
+	"Quarter" INT,
+	"Weekday" VARCHAR(15)
 );
 
 CREATE TABLE "Service" (
 	pk_idService INT IDENTITY(1,1) PRIMARY KEY, -- IDENTITY(1,1) for autoincrement of primary key
 	Park VARCHAR(70) NOT NULL, --name of the park
-	ZoneType VARCHAR NOT NULL, -- accommodation, tour, worker
+	ZoneType VARCHAR(70) NOT NULL, -- accommodation, tour, worker
 	Area VARCHAR(70) NOT NULL, -- area of the tour
-	"Description" VARCHAR(50) NOT NULL -- type of the tour
+	"Description" VARCHAR(70) NOT NULL -- type of the tour
 );
 
 CREATE TABLE Utility (

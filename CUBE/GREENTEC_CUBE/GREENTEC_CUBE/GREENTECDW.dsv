@@ -1,0 +1,162 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a5b862e0-72f0-498c-a325-bfff157d12e9" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>GREENTECDW</ID>
+  <Name>GREENTECDW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>GREENTECDW</DataSourceID>
+  <Schema>
+    <xs:schema id="GREENTECDW" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="GREENTECDW" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="ed2808c4-1a8f-494e-9d1c-7e3a5ddfe9da">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Date" msprop:design-time-name="59179a31-9c7c-47f2-b08d-c9a6ab7585c0" msprop:DbTableName="Date" msprop:FriendlyName="Date" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="pk_idDate" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="8be31ba6-077e-4e22-b263-d0be129c032d" msprop:DbColumnName="pk_idDate" msprop:FriendlyName="pk_idDate" type="xs:int" />
+                  <xs:element name="Time" msprop:design-time-name="d5bbe283-4b4e-457e-9e92-80287b3616b4" msprop:DbColumnName="Time" msprop:FriendlyName="Time" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Week" msprop:design-time-name="161d9e67-fd30-4327-8f09-28f0ad094bd5" msprop:DbColumnName="Week" msprop:FriendlyName="Week" type="xs:int" minOccurs="0" />
+                  <xs:element name="Month" msprop:design-time-name="4ec95723-99b9-499e-b424-b7e749bb57e5" msprop:DbColumnName="Month" msprop:FriendlyName="Month" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Year" msprop:design-time-name="3b0e00df-67c1-4527-9836-424a54471946" msprop:DbColumnName="Year" msprop:FriendlyName="Year" type="xs:int" minOccurs="0" />
+                  <xs:element name="Quarter" msprop:design-time-name="bb21ace4-7ac0-450a-919f-a144d7e5b24d" msprop:DbColumnName="Quarter" msprop:FriendlyName="Quarter" type="xs:int" minOccurs="0" />
+                  <xs:element name="Weekday" msprop:design-time-name="21fea134-7cdf-42b3-93a9-dc2273c1c23a" msprop:DbColumnName="Weekday" msprop:FriendlyName="Weekday" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Entry" msprop:design-time-name="36c6122c-d7c8-4f44-a255-fb6b5f782c52" msprop:DbTableName="Entry" msprop:FriendlyName="Entry" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="pk_idEntry" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="39d9970c-0dc0-45d3-8102-f77906a5ebc5" msprop:DbColumnName="pk_idEntry" msprop:FriendlyName="pk_idEntry" type="xs:int" />
+                  <xs:element name="fk_idService" msprop:design-time-name="435768f1-5a48-499b-9325-239dac04096e" msprop:DbColumnName="fk_idService" msprop:FriendlyName="fk_idService" type="xs:int" />
+                  <xs:element name="fk_idUtility" msprop:design-time-name="cc45640f-d770-4f7a-a93f-c66ae623a058" msprop:DbColumnName="fk_idUtility" msprop:FriendlyName="fk_idUtility" type="xs:int" />
+                  <xs:element name="fk_idDate" msprop:design-time-name="5bacdcab-3e15-49dc-af22-35cea978b2f2" msprop:DbColumnName="fk_idDate" msprop:FriendlyName="fk_idDate" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Service" msprop:design-time-name="129414ec-d79c-491a-8ef8-28b7319ed9d3" msprop:DbTableName="Service" msprop:FriendlyName="Service" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="pk_idService" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="05a63f85-e29b-440d-a608-86bb9f486e59" msprop:DbColumnName="pk_idService" msprop:FriendlyName="pk_idService" type="xs:int" />
+                  <xs:element name="Park" msprop:design-time-name="13537580-2f66-4d5e-b209-b883e63e8424" msprop:DbColumnName="Park" msprop:FriendlyName="Park">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="70" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ZoneType" msprop:design-time-name="fda5b810-7116-42f5-b508-8862c050e6cc" msprop:DbColumnName="ZoneType" msprop:FriendlyName="ZoneType">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="70" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Area" msprop:design-time-name="ac02a7c9-f54b-4a1d-a553-d2d80132348a" msprop:DbColumnName="Area" msprop:FriendlyName="Area">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="70" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Description" msprop:design-time-name="891e3a21-b099-4b8c-a55c-165c254d7948" msprop:DbColumnName="Description" msprop:FriendlyName="Description">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="70" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Utility" msprop:design-time-name="29a2a0f4-cf3f-43c3-a453-9edfb2d06876" msprop:DbTableName="Utility" msprop:FriendlyName="Utility" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="pk_idUtility" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="26fe509f-ca98-49d9-85b5-6123cab3f481" msprop:DbColumnName="pk_idUtility" msprop:FriendlyName="pk_idUtility" type="xs:int" />
+                  <xs:element name="PricePayed" msprop:design-time-name="f646dc6a-2e61-4328-a8e0-c0af1725d6c3" msprop:DbColumnName="PricePayed" msprop:FriendlyName="PricePayed" type="xs:int" minOccurs="0" />
+                  <xs:element name="EmployeeSalary" msprop:design-time-name="d9bcc850-9549-49af-a90a-eb459a083dc9" msprop:DbColumnName="EmployeeSalary" msprop:FriendlyName="EmployeeSalary" type="xs:int" minOccurs="0" />
+                  <xs:element name="Maintenance" msprop:design-time-name="ba9604ea-53f2-4f75-a613-f5051893c71a" msprop:DbColumnName="Maintenance" msprop:FriendlyName="Maintenance" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Date" />
+          <xs:field xpath="pk_idDate" />
+        </xs:unique>
+        <xs:unique name="dbo_Entry_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Entry" />
+          <xs:field xpath="pk_idEntry" />
+        </xs:unique>
+        <xs:unique name="dbo_Service_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Service" />
+          <xs:field xpath="pk_idService" />
+        </xs:unique>
+        <xs:unique name="dbo_Utility_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Utility" />
+          <xs:field xpath="pk_idUtility" />
+        </xs:unique>
+        <xs:keyref name="FK__Entry__fk_idDate__690797E6" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Entry" />
+          <xs:field xpath="fk_idDate" />
+        </xs:keyref>
+        <xs:keyref name="FK__Entry__fk_idServ__671F4F74" refer="dbo_Service_Constraint1">
+          <xs:selector xpath=".//dbo_Entry" />
+          <xs:field xpath="fk_idService" />
+        </xs:keyref>
+        <xs:keyref name="FK__Entry__fk_idUtil__681373AD" refer="dbo_Utility_Constraint1">
+          <xs:selector xpath=".//dbo_Entry" />
+          <xs:field xpath="fk_idUtility" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <GREENTECDW xmlns="" />
+  </Schema>
+</DataSourceView>

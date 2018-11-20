@@ -1,0 +1,26 @@
+Armando el ETL
+
+Paso 1: Limpiar el Data Warehouse
+	Execute SQL Task
+	Ponerle nombre
+	Poner la conexión, hacer una nueva si no hay
+	Poner los queries
+
+Paso 2: Crear las tablas de nuevo
+	Execute SQL Task
+	Ponerle nombre
+	Poner la conexión
+	Poner los queries
+
+Paso 3: Cargar todas las vistas de GREENTEC a la base de GREENTECDW
+	Agregar source y destinos
+
+Armando el cubo
+	Nuevo proyecto de Analisis
+	Nuevo Data Source
+		Poner la conexión y rellenar
+	Nuevo Data Source View
+		Meter todas las tablas del DW
+	Crear dimensiones
+		Tabla existente
+		Seleccionar todas las variables para cada tabla

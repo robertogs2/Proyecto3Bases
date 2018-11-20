@@ -5,18 +5,27 @@ DROP VIEW DateView
 CREATE VIEW DateView AS
 WITH RS AS (
 	(--Tour
-		SELECT CONVERT(DATE, Schedule) AS "Time"
+		SELECT  CONVERT(DATE, Schedule) AS "Time", 
+				DATEPART("ww", Schedule) AS "Week", 
+				DATENAME("mm", Schedule) AS "Month",
+				DATEPART("yyyy", Schedule) AS "Year" ,
+				DATEPART("qq", Schedule) AS "Quarter",
+				DATENAME("weekday", Schedule) AS "Weekday"
 		FROM AccommodationXTour
 		INNER JOIN Tour ON AccommodationXTour.fk_idTour = idTour
 	)
 	UNION ALL
 	(--Accommodation
-		SELECT  CONVERT(DATE, StartDate) AS "Time"
+		SELECT  CONVERT(DATE, StartDate) AS "Time", 
+				DATEPART("ww", StartDate) AS "Week", 
+				DATENAME("mm", StartDate) AS "Month",
+				DATEPART("yyyy", StartDate) AS "Year" ,
+				DATEPART("qq", StartDate) AS "Quarter",
+				DATENAME("weekday", StartDate) AS "Weekday"
 		FROM Visit
 	)
 	)
-SELECT "Time", ROW_NUMBER() OVER (ORDER BY (SELECT 1)) AS pk_idDate FROM RS
-
+SELECT "Time", "Week", "Month", "Year", "Quarter", "Weekday", ROW_NUMBER() OVER (ORDER BY (SELECT 1)) AS pk_idDate FROM RS
 
 DROP VIEW UtilityView
 CREATE VIEW UtilityView AS
@@ -76,7 +85,7 @@ WITH RS AS (
 	)
 )
 SELECT ParkName, ZoneType, AreaName, "Description", ROW_NUMBER() OVER (ORDER BY (SELECT 1)) AS pk_idService FROM RS
-SElect * from AccommodationXTour
+
 DROP VIEW EntryView
 CREATE VIEW EntryView AS
 SELECT ROW_NUMBER() OVER (ORDER BY (SELECT 1)) AS pk_idEntry,
