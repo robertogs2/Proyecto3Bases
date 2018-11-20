@@ -19,3 +19,8 @@ DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME
 ON ROWS FROM ( SELECT ( { [Service].[Zone Type].&[Tour] } ) 
 ON COLUMNS FROM [GREENTECDW]) WHERE ( [Service].[Zone Type].&[Tour] ) CELL PROPERTIES VALUE, 
 BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS
+
+--Expression for percentage
+
+=IIf(IsNothing(Previous(Fields!TotalSales.Value)),nothing,
+(Fields!TotalSales.Value-Previous(Fields!TotalSales.Value))/Previous(Fields!TotalSales.Value))
