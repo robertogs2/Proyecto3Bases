@@ -32,4 +32,11 @@ Armando el cubo
 
 Consultas con el browser
 	Jalar por lo que se desea agrupar
-	
+	Arriba estan los filtros
+
+Armando los reportes
+	Conectarse a la base de datos de analysis
+	Crear proyecto sin wizard en visual
+	Darle click derecho a reportes nuevo reporte
+	Click derecho sobre lo que abre y agregar lo que sea desea
+	Para la conexion seleccionar todo de analisis
