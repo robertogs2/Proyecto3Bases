@@ -26,28 +26,28 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>pSC5vGR5nLOENuoQDeT5iJL/nKk=19/11/2018 20:35:4019/11/2018 19:48:35</TimeStamp>
+        <TimeStamp>pSC5vGR5nLOENuoQDeT5iJL/nKk=20/11/2018 17:29:1520/11/2018 17:24:23</TimeStamp>
         <ID>
           <String>GREENTECDW</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>ZK8gzBQulmgalsmrouVVhrFnk0o=19/11/2018 20:35:4819/11/2018 20:35:48</TimeStamp>
+        <TimeStamp>ZK8gzBQulmgalsmrouVVhrFnk0o=20/11/2018 17:29:1520/11/2018 17:24:42</TimeStamp>
         <ID>
           <String>Date</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>jGXrWcUSxtGn71QpwP/9cNVFOMc=19/11/2018 20:35:5719/11/2018 20:35:57</TimeStamp>
+        <TimeStamp>jGXrWcUSxtGn71QpwP/9cNVFOMc=20/11/2018 17:29:1520/11/2018 17:24:59</TimeStamp>
         <ID>
           <String>Service</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>AEpFXEpdKd80ul71++LyzaO+Tew=19/11/2018 22:29:5719/11/2018 20:36:19ES93VXeW8ytMltmzWfC1D7R2pmk=19/11/2018 20:36:1919/11/2018 20:36:19</TimeStamp>
+        <TimeStamp>AEpFXEpdKd80ul71++LyzaO+Tew=20/11/2018 17:29:1520/11/2018 17:29:15ES93VXeW8ytMltmzWfC1D7R2pmk=20/11/2018 17:29:1520/11/2018 17:29:15</TimeStamp>
         <ID>
           <String>GREENTECDW</String>
         </ID>
@@ -64,5 +64,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2018-11-20T04:30:09.133333Z</LastDeployed>
+  <LastDeployed>2018-11-20T23:41:36.27Z</LastDeployed>
 </DeploymentSnapshot>

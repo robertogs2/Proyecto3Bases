@@ -40,7 +40,7 @@ WITH RS AS (
 		Employee.Salary*1/80*DATEDIFF(DAY, StartDate, EndDate) AS EmployeeSalary
 		FROM Visit
 		INNER JOIN Accommodation ON Accommodation.idAccommodation = fk_idAccommodation
-		INNER JOIN Employee ON Employee.idEmployee = (select CAST(RAND(idAccommodation*BasePrice)*10000 AS INT) %700)
+		INNER JOIN Employee ON Employee.idEmployee = (select CAST(RAND(idAccommodation*BasePrice)*10000 AS INT) %700)+1
 	)
 	UNION ALL
 	(--Tour
