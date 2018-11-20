@@ -58,7 +58,7 @@ WITH RS AS (
 		INNER JOIN Employee ON Employee.idEmployee = (select CAST(RAND(idTour*Price)*10000 AS INT) %700)+1
 	)
 )
-SELECT PricePayed, Maintenance, EmployeeSalary, ROW_NUMBER() OVER (ORDER BY (SELECT 1)) AS pk_idUtility FROM RS
+SELECT * FROM RS
 
 DROP VIEW ResourceView
 CREATE VIEW ResourceView AS
@@ -88,8 +88,8 @@ SELECT ParkName, ZoneType, AreaName, "Description", ROW_NUMBER() OVER (ORDER BY 
 
 DROP VIEW EntryView
 CREATE VIEW EntryView AS
-SELECT ROW_NUMBER() OVER (ORDER BY (SELECT 1)) AS pk_idEntry,
-ROW_NUMBER() OVER (ORDER BY (SELECT 1)) AS fk_idUtility,
+SELECT *, ROW_NUMBER() OVER (ORDER BY (SELECT 1)) AS pk_idEntry,
 ROW_NUMBER() OVER (ORDER BY (SELECT 1)) AS fk_idDate,
 ROW_NUMBER() OVER (ORDER BY (SELECT 1)) AS fk_idService
-FROM DateView
+FROM UtilityView
+
